@@ -38,6 +38,7 @@
     display: none;
 
 }
+
 #nav-item-form{
     flex: 2;
 }
@@ -45,4 +46,45 @@
 .nav-icons{
     display: flex;
     gap: var(--gap-l);
+}
+
+/* responsividade */
+/* tablet */
+
+@media screen and (max-width: 1200px) {
+    .nav-list{
+        row-gap: var(--gap-l);
+        gap: var(--gap-s);
+
+    }
+    
+    #nav-item-form{
+        flex: 1 1 100% ;
+        text-align: center;
+        order: 1;
+    }
+    .header{
+        padding: 0 var(--padding-xxl);
+    }
+    
+}
+
+/* mobile-phone */
+
+@media screen and (max-width: 730px){
+    .nav-link{
+        display: none;
+    }
+    .menu-toggle{
+        display: block;
+        cursor: pointer;
+    }
+    .header{
+        padding: 0 var(--padding-m);
+    }
+    .menu-toggle{
+        background-color: transparent;
+        border: none;
+    }
+    
 }
